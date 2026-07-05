@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cumple Mariano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Poppins,sans-serif;overflow:hidden;background:linear-gradient(#1e88e5,#81d4fa 45%,#ffe082 58%,#66bb6a 58%,#43a047)}
+.sun{position:absolute;right:6%;top:5%;width:110px;height:110px;border-radius:50%;background:#ffeb3b;box-shadow:0 0 60px #ffeb3b}
+.cloud{position:absolute;font-size:60px;animation:cloud linear infinite}.c1{top:30px;animation-duration:30s}.c2{top:110px;animation-duration:42s}
+@keyframes cloud{from{left:-20%}to{left:120%}}
+.hill{position:absolute;bottom:0;border-radius:50% 50% 0 0;background:#2e7d32}.h1{left:-10%;width:60%;height:180px}.h2{right:-10%;width:55%;height:220px;background:#388e3c}
+.card{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);background:#fffffff0;padding:30px;border-radius:25px;width:min(92%,700px);text-align:center;box-shadow:0 15px 40px #0004;animation:pop .8s}
+@keyframes pop{from{opacity:0;transform:translate(-50%,-60%) scale(.8)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+h1{font-family:Luckiest Guy,cursive;font-size:52px;color:#1565c0;text-shadow:3px 3px #ffd54f;margin:0}
+h2{color:#2e7d32;margin:8px}
+.info{font-size:20px}
+.btn{display:inline-block;margin:10px;padding:13px 22px;border-radius:30px;color:#fff;text-decoration:none;font-weight:700;transition:.2s}.btn:hover{transform:scale(1.06)}
+.maps{background:#1976d2}.wa{background:#25D366}
+#tractor{position:absolute;bottom:55px;left:-260px;width:260px;height:140px;animation:drive 14s linear infinite}
+@keyframes drive{from{left:-260px}to{left:120%}}
+.b{position:absolute;left:45px;top:40px;width:150px;height:50px;background:#1976d2;border-radius:8px}
+.cab{position:absolute;left:120px;top:10px;width:60px;height:50px;background:#90caf9;border:4px solid #1976d2}
+.w{position:absolute;border:9px solid #222;border-radius:50%;background:#555;animation:spin .8s linear infinite}
+.big{width:70px;height:70px;left:15px;top:55px}.small{width:45px;height:45px;left:170px;top:72px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.conf{position:absolute;top:-10px;width:8px;height:16px;animation:fall 4s linear infinite}
+@keyframes fall{to{transform:translateY(110vh) rotate(600deg)}}
+</style></head><body>
+<div class="sun"></div><div class="cloud c1">☁️</div><div class="cloud c2">☁️</div>
+<div class="hill h1"></div><div class="hill h2"></div>
+<div class="card">
+<h1>🚜 ¡Estás Invitado! 🚜</h1>
+<h2>Cumpleaños #52</h2>
+<div class="info">
+<b>Mariano Pérez Ángeles</b><br><br>
+📅 Lunes 6 de julio de 2026<br>
+🕔 a las 5:00 PM<br>
+📍 Casa de Yeti
+</div><br>
+<a class="btn maps" href="https://maps.app.goo.gl/4dXEZKMnmNb1oGRx8">📍 Cómo llegar</a>
+<a class="btn wa" href="#" onclick="document.getElementById('shop').style.display='flex';return false;">📲 Confirmar asistencia</a>
+<div id="shop" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:9999;align-items:center;justify-content:center;font-family:Poppins,sans-serif;">
+<div id="p1" style="background:#fff;border-radius:20px;padding:25px;max-width:430px;text-align:center">
+<div style="font-size:70px">😂</div>
+<h2>¡JAJAJA, CAÍSTE!</h2>
+<p>En realidad aquí está mi <b>lista oficial de regalos</b>.<br>Ya que andas por aquí... 😎🎁</p>
+<button onclick="p1.style.display='none';p2.style.display='block'" style="padding:12px 22px;border:none;border-radius:25px;background:#25D366;color:#fff;font-weight:bold">Ver lista 🛒</button>
+</div>
+<div id="p2" style="display:none;background:#fff;border-radius:20px;padding:25px;max-width:500px">
+<h2 style="text-align:center">🛒 Tienda Oficial de Mariano</h2>
+<div style="border:1px solid #ddd;border-radius:12px;padding:10px;margin:10px">🚜 Tractor John Deere de colección <span style="float:right;color:green">$850</span></div>
+<div style="border:1px solid #ddd;border-radius:12px;padding:10px;margin:10px">💵 Billete de $500 <span style="float:right;color:green">Agotado... nunca 😏</span></div>
+<div style="border:1px solid #ddd;border-radius:12px;padding:10px;margin:10px">🥩 1 kg de carne para la carnita <span style="float:right;color:green">$250</span></div>
+<div style="border:1px solid #ddd;border-radius:12px;padding:10px;margin:10px">🍺 Un 12 de cervezas <span style="float:right;color:green">$320</span></div>
+<div style="border:1px solid #ddd;border-radius:12px;padding:10px;margin:10px">🎂 Otro pastel <span style="float:right;color:green">$400</span></div>
+<div style="text-align:center;margin-top:20px">
+<button onclick="alert('😂 ¡Gracias por revisar mi lista! Ahora sí... nos vemos en el cumpleaños. 🚜🎉');document.getElementById('shop').style.display='none';" style="padding:12px 22px;border:none;border-radius:25px;background:#1976d2;color:#fff;font-weight:bold">Comprar todo 🛍️</button>
+</div>
+</div>
+</div>
+</div>
+<div id="tractor"><div class="cab"></div><div class="b"></div><div class="w big"></div><div class="w small"></div></div>
+<script>
+for(let i=0;i<80;i++){let d=document.createElement('div');d.className='conf';d.style.left=Math.random()*100+'vw';d.style.background=['#ff5252','#ffd740','#40c4ff','#69f0ae','#e040fb'][i%5];d.style.animationDelay=(Math.random()*4)+'s';d.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(d);}
+</script></body></html>
